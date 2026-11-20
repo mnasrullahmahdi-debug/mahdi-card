@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>M. MAHDI NASRULLAH</title>
+<style>
+:root{
+  --bg:#000; --ink:#fff; --muted:#a6a6a6; --line:rgba(255,255,255,.4);
+  --serif:"Cormorant Garamond","Palatino Linotype",Georgia,"Noto Serif",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Bengali",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--bg);color:var(--ink);font-family:var(--sans);min-height:100%}
+body{padding:calc(env(safe-area-inset-top,0px) + 16px) 16px calc(env(safe-area-inset-bottom,0px) + 16px);max-width:520px;margin:0 auto}
+.frame{display:flex;flex-direction:column;min-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 32px)}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.15rem,6.2vw,2rem);line-height:1.1;text-align:center;letter-spacing:.04em;white-space:nowrap}
+.place{text-align:center;color:var(--muted);font-size:.85rem;margin-top:6px}
+h2{font-size:1rem;font-weight:700;color:var(--ink);margin:14px 0 6px}
+button{font:inherit;cursor:pointer;border:1px solid var(--ink);border-radius:0;background:transparent;color:var(--ink);padding:11px 4px;font-size:.85rem}
+button.primary{background:var(--ink);color:#000;font-weight:600}
+button:active{opacity:.6}
+button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.call-main{display:flex;justify-content:space-between;align-items:center;background:var(--ink);color:#000;text-decoration:none;padding:12px 16px;font-size:1.15rem;font-weight:600;margin-top:16px}
+.call-main span{font-size:.8rem;font-weight:500;color:#444}
+.social{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.social a,.acts a{display:block;text-align:center;border:1px solid var(--line);color:var(--ink);text-decoration:none;padding:10px 2px;font-size:.85rem}
+.social a:active,.acts a:active{background:var(--ink);color:#000}
+.addr{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:5px 0;font-size:1.15rem;line-height:1.3}
+.addr .l{color:var(--ink);font-weight:700;font-size:1rem;flex-shrink:0}
+.addr small{display:block;color:var(--muted);font-weight:400;font-size:.8rem}
+.addr .v{text-align:right}
+.sos-card{margin-top:8px;padding:9px 12px 10px;border:1px solid var(--line)}
+.sos-r1{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:1.05rem}
+.sos-r1 small{color:var(--ink);font-weight:700;font-size:.88rem}
+.sos-r2{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-top:2px;font-size:.8rem;color:var(--muted)}
+.sos-r2 b{font-weight:400;color:var(--ink);font-size:.9rem;white-space:nowrap}
+.acts{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}
+.acts a{padding:8px 0;font-size:.75rem}
+.acts a.call{background:var(--ink);border-color:var(--ink);color:#000;font-weight:600}
+.bottom{margin-top:auto;padding-top:12px}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+#toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 24px);transform:translateX(-50%);background:var(--ink);color:#000;padding:10px 20px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s}
+#toast.show{opacity:1}
+@media (prefers-reduced-motion:reduce){#toast{transition:none}}
+</style>
+</head>
+<body>
+<main class="frame">
+  <h1>M. MAHDI NASRULLAH</h1>
+
+  <a class="call-main go" href="tel:+8801720492956">+880 1720 492956 <span>কল / Call</span></a>
+
+  <div class="social">
+    <a class="go" href="https://wa.me/message/W2MRDVLONTTSC1">WhatsApp</a>
+    <a class="go" href="https://s.imoim.net/edkNSK">imo</a>
+    <a class="go" href="https://www.facebook.com/share/1DhV6oVnGx/">Facebook</a>
+    <a class="go" href="https://www.instagram.com/m.nasrullah.mahdi" data-app="instagram://user?username=m.nasrullah.mahdi">Instagram</a>
+    <a class="go" href="https://www.tiktok.com/@m.mahdi.nasrullah">TikTok</a>
+    <a class="go" href="https://www.linkedin.com/in/m-mahdi-nasrullah-6b7928440">LinkedIn</a>
+  </div>
+
+  <h2>ঠিকানা / Address</h2>
+  <div class="addr"><span class="l">বর্তমান<small>Present</small></span><span class="v">আদর্শ সদর, বুড়িচং, কুমিল্লা<small>Adarsha Sadar, Burichang, Cumilla</small></span></div>
+  <div class="addr"><span class="l">স্থায়ী<small>Permanent</small></span><span class="v">বেজুরা, ব্রাহ্মণপাড়া, কুমিল্লা<small>Bejura, Brahmanpara, Cumilla</small></span></div>
+
+  <h2>জরুরি যোগাযোগ / Emergency Contact</h2>
+  <div class="sos-card">
+    <div class="sos-r1"><span>মোঃ মোরশেদ আলম</span><small>বাবা / Father</small></div>
+    <div class="sos-r2"><span>Md: Morshed Alam</span><b>+880 1770 380756</b></div>
+    <div class="acts">
+      <a class="go call" href="tel:+8801770380756">কল / Call</a>
+      <a class="go" href="https://wa.me/8801770380756">WhatsApp</a>
+      <a class="cp" href="#" data-copy="+8801770380756">imo</a>
+      <a class="go" href="https://www.facebook.com/share/1EEPntR85R/">Facebook</a>
+    </div>
+  </div>
+  <div class="sos-card">
+    <div class="sos-r1"><span>এম মেহেদী হাসান</span><small>খালাতো ভাই / Cousin</small></div>
+    <div class="sos-r2"><span>M. Mahedi Hasan</span><b>+880 1346 099634</b></div>
+    <div class="acts">
+      <a class="go call" href="tel:+8801346099634">কল / Call</a>
+      <a class="go" href="https://wa.me/8801346099634">WhatsApp</a>
+      <a class="go" href="https://facetime.apple.com/join#v=1&p=U8mdYoNqEfGDJ74H8+Txiw&k=cF7j43hhdHhhKa58k7hVdUpSnaI1JOZvkXd1FC6zmnc">imo</a>
+      <a class="go" href="https://www.facebook.com/share/1Fp3RFsWQV/">Facebook</a>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="actions">
+      <button class="primary" id="save">সেভ / Save</button>
+      <button id="share">শেয়ার / Share</button>
+      <button id="copy">কপি / Copy</button>
+    </div>
+  </div>
+</main>
+<div id="toast" role="status"></div>
+
+<script>
+const P = {
+  name: "M. MAHDI NASRULLAH",
+  phone: "+8801720492956",
+  links: {
+    WhatsApp: "https://wa.me/message/W2MRDVLONTTSC1",
+    imo: "https://s.imoim.net/edkNSK",
+    Facebook: "https://www.facebook.com/share/1DhV6oVnGx/",
+    Instagram: "https://www.instagram.com/m.nasrullah.mahdi",
+    TikTok: "https://www.tiktok.com/@m.mahdi.nasrullah",
+    LinkedIn: "https://www.linkedin.com/in/m-mahdi-nasrullah-6b7928440"
+  },
+  present: "Adarsha Sadar, Burichang, Cumilla",
+  permanent: "Bejura, Brahmanpara, Cumilla"
+};
+
+const vcard = [
+  "BEGIN:VCARD","VERSION:3.0",
+  "N:NASRULLAH;M. MAHDI;;;","FN:" + P.name,
+  "TEL;TYPE=CELL,PREF:" + P.phone,
+  "URL:" + P.links.Facebook,
+  "X-SOCIALPROFILE;TYPE=instagram:" + P.links.Instagram,
+  "X-SOCIALPROFILE;TYPE=linkedin:" + P.links.LinkedIn,
+  "ADR;TYPE=HOME:;;" + P.present + ";;;;Bangladesh",
+  "ADR;TYPE=OTHER:;;" + P.permanent + ";;;;Bangladesh",
+  "END:VCARD"
+].join("\r\n");
+
+const text = [
+  P.name,
+  "Mobile: +880 1720 492956",
+  ...Object.entries(P.links).map(([k,v]) => k + ": " + v),
+  "Present address: " + P.present,
+  "Permanent address: " + P.permanent
+].join("\n");
+
+const plug = n => (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins[n]) || null;
+
+function toast(m){
+  const t = document.getElementById("toast");
+  t.textContent = m; t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 1800);
+}
+
+async function copyRaw(v, msg){
+  try{ await navigator.clipboard.writeText(v); }
+  catch(e){
+    const a = document.createElement("textarea"); a.value = v;
+    document.body.appendChild(a); a.select(); document.execCommand("copy"); a.remove();
+  }
+  toast(msg);
+}
+
+/* Link buttons: try the app scheme (if any), then the web/app link */
+document.querySelectorAll("a.go").forEach(el => el.addEventListener("click", async e => {
+  e.preventDefault();
+  const web = el.getAttribute("href"), app = el.dataset.app;
+  const L = plug("AppLauncher");
+  if (!L) { window.location.href = web; return; }
+  try{
+    if (app) { const r = await L.openUrl({ url: app }); if (r && r.completed) return; }
+  }catch(_){}
+  try{
+    const r = await L.openUrl({ url: web });
+    if (r && r.completed === false) window.open(web, "_blank");
+  }catch(_){ window.open(web, "_blank"); }
+}));
+
+/* imo without a link: copy the number */
+document.querySelectorAll("a.cp").forEach(el => el.addEventListener("click", e => {
+  e.preventDefault();
+  copyRaw(el.dataset.copy, "imo নম্বর কপি হয়েছে / imo number copied");
+}));
+
+async function shareText(){
+  try{
+    const S = plug("Share");
+    if (S) { await S.share({ title: P.name, text }); return; }
+    if (navigator.share) { await navigator.share({ title: P.name, text }); return; }
+    await copyRaw(text, "কপি হয়েছে / Copied");
+  }catch(e){ /* user cancelled */ }
+}
+
+async function saveContact(){
+  try{
+    const F = plug("Filesystem"), S = plug("Share");
+    if (F && S) {
+      await F.writeFile({ path: "mahdi.vcf", data: vcard, directory: "CACHE", encoding: "utf8" });
+      const { uri } = await F.getUri({ path: "mahdi.vcf", directory: "CACHE" });
+      await S.share({ title: "Save contact", url: uri, dialogTitle: "Open with Contacts" });
+      return;
+    }
+    const b = new Blob([vcard], { type: "text/vcard" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(b); a.download = "mahdi.vcf"; a.click();
+  }catch(e){ toast("সেভ করা যায়নি / Could not save"); }
+}
+
+document.getElementById("save").onclick = saveContact;
+document.getElementById("share").onclick = shareText;
+document.getElementById("copy").onclick = () => copyRaw(text, "কপি হয়েছে / Copied");
+</script>
+</body>
+</html>
